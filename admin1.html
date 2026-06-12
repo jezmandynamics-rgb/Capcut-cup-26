@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Admin — CapCut Creators Cup</title>
+<meta name="robots" content="noindex,nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg>
+      </span>
+      <span class="logo-text">CapCut <span class="accent">Admin</span></span>
+    </a>
+    <a href="index.html" class="btn btn-outline btn-sm">← Back home</a>
+  </div>
+</header>
+
+<section class="hero" style="padding-bottom:24px">
+  <div class="hero-glow"></div>
+  <div class="container">
+    <div class="pill"><span class="dot"></span> Internal · Submissions dashboard</div>
+    <h1 class="display" style="font-size:clamp(28px,4vw,42px)">
+      All <span class="gradient-text">entries</span>
+      <span id="count" class="muted" style="font-size:18px;font-weight:600;margin-left:8px"></span>
+    </h1>
+    <p class="lead">Every submission from the entry form lands here in real time.</p>
+    <button id="refresh" class="btn btn-outline btn-sm">↻ Refresh</button>
+  </div>
+</section>
+
+<section class="about" style="padding-top:24px">
+  <div class="container">
+    <div id="status" class="muted">Loading…</div>
+    <div id="grid" class="admin-grid"></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container foot-inner">
+    <div>© 2026 CapCut Creators Cup</div>
+    <div>Admin · Internal use only</div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-config.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>

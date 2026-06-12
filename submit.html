@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Submit Your Project — CapCut Creators Cup</title>
+<meta name="description" content="Submit your edit to the CapCut Creators Cup Season 05." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg>
+      </span>
+      <span class="logo-text">CapCut <span class="accent">Creators Cup</span></span>
+    </a>
+    <a href="index.html" class="btn btn-outline btn-sm">← Back home</a>
+  </div>
+</header>
+
+<!-- FORM SECTION -->
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="container form-page">
+
+    <div class="center" style="margin-bottom:40px">
+      <div class="pill"><span class="dot"></span> Season 05 · Entry form</div>
+      <h1 class="display" style="font-size:clamp(32px,5vw,52px)">
+        Submit your <span class="gradient-text">project</span>.
+      </h1>
+      <p class="lead">Fill out the details below. One entry per editor. Make it count.</p>
+    </div>
+
+    <!-- FORM CARD -->
+    <form id="entry-form" class="form-card" novalidate>
+      <div class="form-grid">
+        <div class="field">
+          <label for="fullName">Full name</label>
+          <input id="fullName" name="fullName" type="text" placeholder="Andrew Williams" required maxlength="100" />
+          <small class="err" data-for="fullName"></small>
+        </div>
+
+        <div class="field">
+          <label for="country">Country</label>
+          <input id="country" name="country" type="text" placeholder="United States" required maxlength="60" />
+          <small class="err" data-for="country"></small>
+        </div>
+
+        <div class="field">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" placeholder="you@email.com" required maxlength="120" />
+          <small class="err" data-for="email"></small>
+        </div>
+
+        <div class="field">
+          <label for="phone">Phone number</label>
+          <input id="phone" name="phone" type="tel" placeholder="+1 202 555 0143" required maxlength="30" />
+          <small class="err" data-for="phone"></small>
+        </div>
+
+        <div class="field full">
+          <label for="portfolio">Portfolio link</label>
+          <input id="portfolio" name="portfolio" type="url" placeholder="https://yourportfolio.com" required maxlength="300" />
+          <small class="err" data-for="portfolio"></small>
+        </div>
+
+        <div class="field full">
+          <label for="thumbnail">Project thumbnail</label>
+          <div class="upload" id="thumbDrop">
+            <input id="thumbnail" name="thumbnail" type="file" accept="image/*" hidden />
+            <div class="upload-inner">
+              <div class="upload-ico">🖼️</div>
+              <div><strong>Click to upload</strong> or drag an image here</div>
+              <small class="muted">PNG or JPG · max 5MB</small>
+            </div>
+            <img id="thumbPreview" alt="" hidden />
+          </div>
+          <small class="err" data-for="thumbnail"></small>
+        </div>
+
+        <div class="field full">
+          <label for="video">Project video</label>
+          <div class="upload" id="videoDrop">
+            <input id="video" name="video" type="file" accept="video/*" hidden />
+            <div class="upload-inner">
+              <div class="upload-ico">🎬</div>
+              <div><strong>Click to upload</strong> or drag your edit here</div>
+              <small class="muted">MP4 or MOV · 60 sec max · up to 200MB</small>
+            </div>
+            <div id="videoName" class="file-name" hidden></div>
+          </div>
+          <small class="err" data-for="video"></small>
+        </div>
+      </div>
+
+      <label class="check">
+        <input type="checkbox" id="agree" required />
+        <span>I confirm this edit is my original work and was made in CapCut.</span>
+      </label>
+
+      <button type="submit" class="btn btn-primary btn-lg full-w">↑ Submit entry</button>
+    </form>
+
+    <!-- SUCCESS -->
+    <div id="success" class="success-card" hidden>
+      <div class="success-ico">✓</div>
+      <h2>Submission received</h2>
+      <p class="muted">
+        Thank you for entering the <strong>CapCut Creators Cup — Season 05</strong>.
+        Your project has been logged and will be reviewed by our judging panel
+        alongside thousands of entries from creators around the world.
+      </p>
+      <p class="muted">
+        If your edit is selected as the winning entry, a member of the CapCut
+        team will contact you directly using the email and phone number provided.
+        We wish you the very best of luck.
+      </p>
+      <a href="index.html" class="btn btn-outline btn-lg" style="margin-top:8px">Back to home</a>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container foot-inner">
+    <div>© 2026 CapCut Creators Cup</div>
+    <div>An official CapCut initiative.</div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-config.js"></script>
+<script src="submit.js"></script>
+</body>
+</html>

